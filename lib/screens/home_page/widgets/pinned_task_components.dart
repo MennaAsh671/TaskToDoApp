@@ -19,12 +19,15 @@ class PinnedTaskComponents extends StatelessWidget {
             ? AppColors.checkedTaskColor
             : AppColors.unCheckedTaskColor,
       ),
-      Text(
-        taskComps.name,
-        style: TextStyle(
-          color: (taskComps.isDone == true)
-              ? AppColors.checkedTaskColor
-              : AppColors.unCheckedTaskColor,
+      Padding(
+        padding: const EdgeInsets.all(4.0),
+        child: Text(
+          taskComps.name,
+          style: TextStyle(
+            color: (taskComps.isDone == true)
+                ? AppColors.checkedTaskColor
+                : AppColors.unCheckedTaskColor,
+          ),
         ),
       )
     ]);
